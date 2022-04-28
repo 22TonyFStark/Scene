@@ -27,8 +27,15 @@
 1. backbone 替换成 resnet, vit, swin 等等, 相对应的vgg loss需要修改, 还需要考虑pretrained_model的问题
 2. hinge loss修改成wgan-gp, wgan-lp等其他损失，主要想用来提高FID
 3. 卷积层增加谱归一化，加入self-attention模块，类似于SNGAN、SAGAN，主要也是用来提高FID
-
-## 下一步实验
+4. 对于Gauganv1_VAE，encode的输入、SPADE的输入可以加入更多先验，比如instance map和纹理图等
+## TODO
 dzw:
 1. 先完成线下评估，减小线上和线下的gap
 2. 想法 2 和想法 3 实验
+qzf:  
+1. 想法1
+2. 想法4
+## 细节
+实验1-6使用的时默认的超参数，模型的细节为：
+1. Gauganv1的Backbone
+2. Gauganv1的Loss
