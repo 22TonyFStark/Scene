@@ -30,7 +30,7 @@
 4. 对于Gauganv1_VAE，encode的输入、SPADE的输入可以加入更多先验，比如instance map和纹理图等
 ## TODO
 dzw:
-1. 先完成线下评估，减小线上和线下的gap
+1. 线下美学分数评估，线上线下gap
 2. 想法 2 和想法 3 实验  
 
 qzf:  
