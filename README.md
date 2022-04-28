@@ -36,8 +36,9 @@ dzw:
 qzf:  
 1. 实验：use_vae和cycleGAN一起使用能否更好
 2. 实验：gauganv1_s512_vae
-3. 想法1
-4. 想法4
+3. 直接使用风格迁移的方法，cycleGAN、CUT https://github.com/taesungp/contrastive-unpaired-translation
+4. 想法1
+5. 想法4
 ## 细节
 实验1-6使用的是默认的超参数，模型的细节为：
 1. Gauganv1的Backbone
