@@ -19,8 +19,12 @@
 ### **3.风格迁移**  
 （1）实验3对比实验5：使用cycleGAN可以**显著**提升FID。肉眼上看，主要是饱和度变化了，有些场景的细节有一些提升，但美学和mask_acc都下降了，比较**奇怪**。  
 （2）实验5对比实验6：cycleGAN视觉上好看了，但美学并没有提高。迭代过程中，ep20和ep100时很蓝、颜色饱和度高。ep20时各项指标都不好。  
+|  ID    |  原图    | ep20 | ep60  | ep100 | ep180 
+|  ----    |  ----  | ----  |----  |----  |----  
+| 1
+| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="256">
+| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep20.jpg" width="256">
+| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep60.jpg" width="256">
+| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep100.jpg" width="256">
+| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep180.jpg" width="256">
 
- ![](https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg =x200)
- 
- 
- <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="128">
