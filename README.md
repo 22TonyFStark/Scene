@@ -34,14 +34,14 @@
 3. 卷积层增加谱归一化，加入self-attention模块，类似于SNGAN、SAGAN，主要也是用来提高FID
 4. 对于Gauganv1_VAE，encode的输入、SPADE的输入可以加入更多先验，比如instance map和纹理图等
 5. label-smooth\self-attention\Resize Convolution\Multi-Scale Gradient\Spectral Normalization\TTUR
-6. no function absolutely prevailed over the others https://arxiv.org/abs/1811.09567
+6. no loss function absolutely prevailed over the others https://arxiv.org/abs/1811.09567
 ## TODO
 dzw:
 1. 线下美学分数评估，线上线下gap
 2. 想法 2 和想法 3 实验  
 
 qzf:  
-1. 实验：use_vae和cycleGAN一起使用能否更好
+[=1. 实验：use_vae和cycleGAN一起使用能否更好=]
 2. 实验：gauganv1_s512_vae
 3. 直接使用风格迁移的方法，cycleGAN、CUT https://github.com/taesungp/contrastive-unpaired-translation
 4. 想法1
