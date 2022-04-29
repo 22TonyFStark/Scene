@@ -23,7 +23,8 @@
 （2）实验5对比实验6：cycleGAN视觉上好看了，但美学并没有提高。迭代过程中，ep20和ep100时很蓝、颜色饱和度高。ep20时各项指标都不好。  
 |  ID    |  原图    | ep20 | ep60  | ep100 | ep180 
 |  ----    |  ----  | ----  |----  |----  |----  
-| 1| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep20.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep60.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep100.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep180.jpg" width="300">
+| 1| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep20.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep60.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep100.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep180.jpg" width="300">  
+
 （3）实验4对比实验7：cycleGAN可以进一步提升gauganv1_vae，把FID在原来降低的基础上进一步**显著**降低。
 
 ## 想法
