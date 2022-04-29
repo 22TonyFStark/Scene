@@ -41,7 +41,7 @@ dzw:
 2. 想法 2 和想法 3 实验  
 
 qzf:  
-[=1. 实验：use_vae和cycleGAN一起使用能否更好=]
+[=1. 实验：use_vae和cycleGAN一起使用能否更好=]  
 2. 实验：gauganv1_s512_vae
 3. 直接使用风格迁移的方法，cycleGAN、CUT https://github.com/taesungp/contrastive-unpaired-translation
 4. 想法1
