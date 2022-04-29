@@ -24,6 +24,7 @@
 |  ID    |  原图    | ep20 | ep60  | ep100 | ep180 
 |  ----    |  ----  | ----  |----  |----  |----  
 | 1| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep20.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep60.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep100.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep180.jpg" width="300">
+（3）实验4对比实验7：cycleGAN可以进一步提升gauganv1_vae，把FID在原来降低的基础上进一步**显著**降低。
 
 ## 想法
 1. backbone 替换成 resnet, vit, swin 等等, 相对应的vgg loss需要修改, 还需要考虑pretrained_model的问题
