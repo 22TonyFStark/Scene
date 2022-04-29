@@ -33,6 +33,8 @@
 2. hinge loss修改成wgan-gp, wgan-lp等其他损失，主要想用来提高FID
 3. 卷积层增加谱归一化，加入self-attention模块，类似于SNGAN、SAGAN，主要也是用来提高FID
 4. 对于Gauganv1_VAE，encode的输入、SPADE的输入可以加入更多先验，比如instance map和纹理图等
+5. label-smooth\self-attention\Resize Convolution\Multi-Scale Gradient\Spectral Normalization\TTUR
+6. no function absolutely prevailed over the others https://arxiv.org/abs/1811.09567
 ## TODO
 dzw:
 1. 线下美学分数评估，线上线下gap
