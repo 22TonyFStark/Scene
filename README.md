@@ -35,6 +35,7 @@
 4. 对于Gauganv1_VAE，encode的输入、SPADE的输入可以加入更多先验，比如instance map和纹理图等
 5. label-smooth\self-attention\Resize Convolution\Multi-Scale Gradient\Spectral Normalization\TTUR
 6. no loss function absolutely prevailed over the others https://arxiv.org/abs/1811.09567
+7. 训一个s64的微型分辨率gauganv1_vae，上采样到512作为instance map
 ## TODO
 dzw:
 1. 线下美学分数评估，线上线下gap
