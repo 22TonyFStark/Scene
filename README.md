@@ -8,13 +8,20 @@
 |  4    | gauganv1_s256_vae+esrgan_x2  | 8 | 0.8714 | **5.0663** | 42.69 | 0.4704
 |  5    | gauganv1_s512+cycleGAN_ep180  | 6 | 0.8833 | 4.9263 | 41.567 | 0.4757
 |  6    | gauganv1_s512+cycleGAN_ep20  | 6 | 0.8877 | 4.8457 | 49.1204 | 0.4409
-|  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | **36.3846**| 0.4894
+|  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | 36.3846| 0.4894
 |  8    | gauganv1_s256_vae+bicubic_x2  | 8 | 0.8828 | 4.9664 | 51.2145| 0.4346
-|  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | **0.9059** | 4.9234 | **35.0399**| **0.5172**
-|  10    | gauganv1_s512_vae  | 12 | 0.9007 | **5.0321** | 37.0918| **0.5099**
+|  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | **0.9059** | 4.9234 | 35.0399| 0.5172
+|  10    | gauganv1_s512_vae  | 12 | 0.9007 | 5.0321 | 37.0918| 0.5099
 |  11   |  gauganv1_s256_vae+esrgan_x2+cxloss_w5  | 4 | 0.9043 | 4.8984 | 35.5186 | 0.513
 |  12   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5  | 4 | 0.9043 | **5.0655** | **33.2812** | **0.5307**
-
+|  13   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2  | 4 | 0.9128 | 5.0504 | **32.6841** | **0.5377**
+|  14   |  cocosnetv1_s256_trainR_testR+esrgan_x2  | 4 | 0.7691 | 4.7557 | 46.5337 | 0.3885
+|  15   |  cocosnetv1_s256_trainVGG_testIOU+esrgan_x2  | 4 | 0.8738 | 4.6861 | 42.457 | 0.4561
+|  17   |  gauganv1_s256_vae_SA+esrgan_x2  | 4 | 0.8525 | 4.4462 | 55.2136 | 0.3804
+|  18   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
+|  19   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
+|  20   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
+|  21   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
 
 ## 分析
 ### **1.超分/分辨率**  
