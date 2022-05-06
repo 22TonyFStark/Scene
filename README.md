@@ -33,10 +33,10 @@
 （2）以实验3为baseline，对比生成s256的小分辨率的实验2、实验4、实验8，vae+普通上采样、不使用vae+超分上采样均降低了性能，但两者结合在一起能超过baseline，比较**奇怪**。
 ### **3.风格迁移**  
 （1）实验3对比实验5：使用cycleGAN可以**显著**提升FID。肉眼上看，主要是饱和度变化了，有些场景的细节有一些提升，但美学和mask_acc都下降了，比较**奇怪**。  
-（2）实验5对比实验6：cycleGAN视觉上好看了，但美学并没有提高。迭代过程中，ep20和ep100时很蓝、颜色饱和度高。ep20时各项指标都不好。
+（2）实验5对比实验6：cycleGAN视觉上好看了，但美学并没有提高。迭代过程中，ep20和ep100时很蓝、颜色饱和度高。ep20时各项指标都不好。  
 （3）实验21表明以gauganv1_s512训练的cycleGAN并不是万能提分的，用在cxloss上似乎不行，有待进一步探究，考虑以cxloss结果训练、或者换一个风格迁移模型。
 ### **4.损失函数**  
-（1）实验11、12、13体现ContextualLoss能**显著**提升FID，这个Loss是针对未配对问题的，但却很有效果，值得思考；考虑CX的改进CoBi
+（1）实验11、12、13体现ContextualLoss能**显著**提升FID，这个Loss是针对未配对问题的，但却很有效果，值得思考；考虑CX的改进CoBi  
 |  ID    |  原图    | ep20 | ep60  | ep100 | ep180 
 |  ----    |  ----  | ----  |----  |----  |----  
 | 1| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/origin.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep20.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep60.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep100.jpg" width="300">| <img src="https://github.com/22TonyFStark/Scene/raw/main/image/ep180.jpg" width="300">  
@@ -58,7 +58,7 @@ dzw:
 
 qzf:  
 1. 实验：use_vae和cycleGAN一起使用能否更好 √  
-2. 实验：gauganv1_s512_vae
+2. 实验：gauganv1_s512_vae √  
 3. 直接使用风格迁移的方法，cycleGAN、CUT https://github.com/taesungp/contrastive-unpaired-translation
 4. 想法1
 5. 想法4
