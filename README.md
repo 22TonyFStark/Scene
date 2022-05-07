@@ -22,6 +22,7 @@
 |  19   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  20   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  21   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
+|  22   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2  | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
 
 ## 分析
 ### **1.超分/分辨率**  
