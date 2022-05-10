@@ -24,6 +24,7 @@
 |  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | **5.1087** | **29.8064** | **0.5452**
 |  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 4 | 0.8866 | 5.0784 | 37.064 | 0.5041
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 4 | 0.8811 | 5.1018 | 42.0288 | 0.4802
+|  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
 
 ### SASMAE
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
