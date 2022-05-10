@@ -6,7 +6,7 @@
 |  1    | gauganv1_s512+esrgan_x2  | 12 | 0.8808 | 4.9649 | 47.3168 | 0.4507
 |  2    | gauganv1_s256+esrgan_x2  | 8 | 0.8718 | 5.0146 | 52.2234 | 0.4268
 |  3    | gauganv1_s512  | 12 | **0.9063** | 4.9318 | 47.7813 | 0.4601
-|  4    | gauganv1_s256_vae+esrgan_x2  | 8 | 0.8714 | **5.0663** | 42.69 | 0.4704
+|  4    | gauganv1_s256_vae+esrgan_x2  | 8 | 0.8714 | 5.0663 | 42.69 | 0.4704
 |  5    | gauganv1_s512+cycleGAN_ep180  | 6 | 0.8833 | 4.9263 | 41.567 | 0.4757
 |  6    | gauganv1_s512+cycleGAN_ep20  | 6 | 0.8877 | 4.8457 | 49.1204 | 0.4409
 |  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | 36.3846| 0.4894
@@ -14,14 +14,14 @@
 |  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | **0.9059** | 4.9234 | 35.0399| 0.5172
 |  10    | gauganv1_s512_vae  | 12 | 0.9007 | 5.0321 | 37.0918| 0.5099
 |  11   |  gauganv1_s256_vae+esrgan_x2+cxloss_w5  | 4 | 0.9043 | 4.8984 | 35.5186 | 0.513
-|  12   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5  | 4 | 0.9043 | **5.0655** | **33.2812** | **0.5307**
+|  12   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5  | 4 | 0.9043 | 5.0655 | **33.2812** | 0.5307
 |  13   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2  | 4 | 0.9128 | 5.0504 | **32.6841** | **0.5377**
 |  14   |  gauganv1_s256_vae_SA+esrgan_x2  | 4 | 0.8525 | 4.4462 | 55.2136 | 0.3804
 |  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  17   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
-|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | 5.1087 | 29.8064 | 0.5452
+|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | 5.1087 | **29.8064** | **0.5452**
 |  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 4 | 0.8866 | 5.0784 | 37.064 | 0.5041
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 4 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 
@@ -33,14 +33,13 @@
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
-|  1   |  cocosnetv1_s256_trainR_testR+esrgan_x2  | 4 | 0.7691 | 4.7557 | 46.5337 | 0.3885
-|  2   |  cocosnetv1_s256_trainVGG_testIOU+esrgan_x2  | 4 | 0.8738 | 4.6861 | 42.457 | 0.4561
-|  3   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2  | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
+|  1   |  cocosnetv1_s256_trainR_testR+esrgan_x2 (jpg) | 4 | 0.7691 | 4.7557 | 46.5337 | 0.3885
+|  2   |  cocosnetv1_s256_trainVGG_testIOU+esrgan_x2 (jpg) | 4 | 0.8738 | 4.6861 | 42.457 | 0.4561
+|  3   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (jpg) | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
+|  4   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (png) | 16 | 0.8852 | **5.247** | **31.7785** | **0.5342**
 
 ### CoCosNetv2
-|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
-|  ----    |  ----  | ----  |----  |----  |----  |----  |
-|  1    | gauganv1_s512+esrgan_x2  | 12 | 0.8808 | 4.9649 | 47.3168 | 0.4507
+
 
 ## 分析
 ### **1.超分/分辨率**  
