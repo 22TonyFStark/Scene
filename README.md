@@ -21,9 +21,9 @@
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  17   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
-|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | **5.1087** | **29.8064** | **0.5452**
-|  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 4 | 0.8866 | 5.0784 | 37.064 | 0.5041
-|  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 4 | 0.8811 | 5.1018 | 42.0288 | 0.4802
+|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 16 | 0.899 | **5.1087** | **29.8064** | **0.5452**
+|  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 16 | 0.8866 | 5.0784 | 37.064 | 0.5041
+|  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 16 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 |  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
 
 ### SASMAE
