@@ -11,11 +11,11 @@
 |  6    | gauganv1_s512+cycleGAN_ep20  | 6 | 0.8877 | 4.8457 | 49.1204 | 0.4409
 |  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | 36.3846| 0.4894
 |  8    | gauganv1_s256_vae+bicubic_x2  | 8 | 0.8828 | 4.9664 | 51.2145| 0.4346
-|  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | **0.9059** | 4.9234 | 35.0399| 0.5172
+|  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | 0.9059 | 4.9234 | 35.0399| 0.5172
 |  10    | gauganv1_s512_vae  | 12 | 0.9007 | 5.0321 | 37.0918| 0.5099
 |  11   |  gauganv1_s256_vae+esrgan_x2+cxloss_w5  | 4 | 0.9043 | 4.8984 | 35.5186 | 0.513
 |  12   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5  | 4 | 0.9043 | 5.0655 | **33.2812** | 0.5307
-|  13   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2  | 4 | 0.9128 | 5.0504 | **32.6841** | **0.5377**
+|  13   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2  | 4 | **0.9128** | 5.0504 | **32.6841** | **0.5377**
 |  14   |  gauganv1_s256_vae_SA+esrgan_x2  | 4 | 0.8525 | 4.4462 | 55.2136 | 0.3804
 |  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
@@ -28,7 +28,7 @@
 ### SASMAE
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
-|  1    | sasmae_s256 + esrgan_x2  | 12 | 0.9193 | **5.1373** | 36.0882 | 0.5299
+|  1    | sasmae_s256 + esrgan_x2  | 12 | **0.9193** | **5.1373** | 36.0882 | 0.5299
 
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
