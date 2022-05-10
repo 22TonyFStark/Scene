@@ -21,14 +21,14 @@
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  17   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
-|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | 5.1087 | **29.8064** | **0.5452**
+|  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 4 | 0.899 | **5.1087** | **29.8064** | **0.5452**
 |  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 4 | 0.8866 | 5.0784 | 37.064 | 0.5041
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 4 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 
 ### SASMAE
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
-|  1    | sasmae_s256 + esrgan_x2  | 12 | 0.9193 | 5.1373 | 36.0882 | 0.5299
+|  1    | sasmae_s256 + esrgan_x2  | 12 | 0.9193 | **5.1373** | 36.0882 | 0.5299
 
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
