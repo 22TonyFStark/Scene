@@ -27,12 +27,12 @@
 |  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
 |  23   |  gauganv1_s256_vae+esrgan_x2+sploss_w12.5   | 16 | 0.8744 | 5.1517 | 44.5676 | 0.4676
 
-### SASMAE
+### SASAME
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
-|  1    | sasmae_s256 + esrgan_x2  | 12 | **0.9193** | **5.1373** | 36.0882 | 0.5299
-|  2    | sasmae_s256 + esrgan_x2 + cxloss_w2.5 | 12 | **0.9218** | **5.0197** | 37.3302 | 0.5202
-|  3    | sasmae_s256 + esrgan_x2 + cxloss_w10 | 12 | **0.9255** | **5.034** | 34.6574 | 0.5353
+|  1    | sasame_s256 + esrgan_x2  | 4 | **0.9193** | **5.1373** | 36.0882 | 0.5299
+|  2    | sasame_s256 + esrgan_x2 + cxloss_w2.5 | 4 | **0.9218** | **5.0197** | 37.3302 | 0.5202
+|  3    | sasame_s256 + esrgan_x2 + cxloss | 4 | **0.9255** | 5.034 | 34.6574 | 0.5353
 
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
@@ -82,6 +82,7 @@
 dzw:
 1. 线下美学分数评估，线上线下gap
 2. 想法 2 和想法 3 实验  
+3. piq的dists loss + pertual loss/cx loss，减小FID
 
 qzf:  
 1. 实验：use_vae和cycleGAN一起使用能否更好 √  
