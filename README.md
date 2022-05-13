@@ -97,3 +97,9 @@ qzf:
 实验1-6使用的是默认的超参数，模型的细节为：
 1. Gauganv1的Backbone
 2. Gauganv1的Loss
+
+
+### FID评估
+python -m pytorch_fid train_img512 47.78 --device cuda:3 --dims 2048
+|  ID    |  官网    | 自测 
+|  ----    |  ----  | ----  |
