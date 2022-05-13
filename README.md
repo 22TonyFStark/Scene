@@ -49,7 +49,7 @@
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1   |  unite_s256_cxloss0.1+esrgan_x2 | 4 | 0.8822 | 5.2341 | 32.1044 | 0.5304
-|  2   |  unite_s256_cxloss0.1_bicubic+esrgan_x2+cycleGAN | 4 | 0.8822 | 5.2341 | 32.1044 | 0.5304
+|  2   |  unite_s256_cxloss0.1_bicubic+esrgan_x2+cycleGAN | 4 | 0.876 | 5.1704 | 33.6479 | 0.5171
 
 ## 分析
 ### **1.超分/分辨率**  
