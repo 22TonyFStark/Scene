@@ -114,3 +114,5 @@ python -m pytorch_fid train_img512 47.78 --device cuda:3 --dims 2048
 |9	|44.57	|44.95368953|
 |10	|47.78	|45.63134|
 |11	|51.21	|51.74274299|
+
+<img src="https://github.com/22TonyFStark/Scene/raw/main/image/线下评估.png" width="512">
