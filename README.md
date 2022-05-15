@@ -65,6 +65,10 @@
 |  2    | + dual attention | 41.65
 |  3    | + style consistence |  39.16
 |  4    | + lpips loss |  32.85
+|  5    | + ema |  44.91
+|  6    | + app loss |  45.84
+|  7    | + haar loss |  43.75
+|  8    | + spl loss |  44.95
 
 ### cocosnetv2
 |  ID    |  描述    |   FID | 
