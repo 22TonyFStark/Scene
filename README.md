@@ -45,7 +45,9 @@
 |  4   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (png) | 16 | 0.8852 | **5.247** | **31.7785** | **0.5342**
 
 ### CoCosNetv2
-
+|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
+|  ----    |  ----  | ----  |----  |----  |----  |----  |
+|  1   |  cocosnetv2_s512 | 8 | 0.9124 | 5.3079 | 29.9293 | 0.5618
 
 ### UNITE
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
