@@ -1,5 +1,5 @@
 # Scene
-## 实验
+## 线上实验
 ### Gauganv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
@@ -52,6 +52,17 @@
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1   |  unite_s256_cxloss0.1+esrgan_x2 | 4 | 0.8822 | 5.2341 | 32.1044 | 0.5304
 |  2   |  unite_s256_cxloss0.1_bicubic+esrgan_x2+cycleGAN | 4 | 0.876 | 5.1704 | 33.6479 | 0.5171
+
+
+## 线下实验
+### Gauganv1_s256_vae
+|  ID    |  描述    |   FID | 
+|  ----    |  ----  | ----  |
+|  0    | baseline  |  44.78
+|  1    | + mode seeking loss  |  38.98
+|  2    | + dual attention | 41.65
+|  3    | + style consistence |  39.16
+|  4    | + lpips loss |  32.85
 
 ## 分析
 ### **1.超分/分辨率**  
