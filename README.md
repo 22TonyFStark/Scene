@@ -69,6 +69,9 @@
 |  6    | + app loss |  45.84
 |  7    | + haar loss |  43.75
 |  8    | + spl loss |  44.95
+|  9    | + msgmsdc loss |  44.74
+|  10    | + pixelshuffle |  48.00
+|  11    | + monce |  58.03
 
 ### cocosnetv2
 |  ID    |  描述    |   FID | 
