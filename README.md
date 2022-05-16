@@ -73,6 +73,12 @@
 |  9    | + msgmsdc loss |  44.74
 |  10    | + pixelshuffle |  48.00
 |  11    | + monce |  58.03
+|  12    | + focalfreq loss w12.5 |  36.52
+|  13    | + focalfreq loss w1 |  45.71
+|  14    | + focalfreq loss w2.5 |  40.64
+|  15    | + focalfreq loss w5 |  41.21
+|  16    | + focalfreq loss w7.5 |  35.79
+|  17    | + focalfreq loss w10 |  49.67
 
 ### cocosnetv2
 |  ID    |  描述    |   FID | 
