@@ -35,6 +35,7 @@
 |  3    | sasame_s256 + esrgan_x2 + cxloss | 4 | **0.9255** | 5.034 | 34.6574 | 0.5353
 |  4    | sasame_s256 + esrgan_x2 + cxloss_w5 | 4 | 0.9192 | 5.0386 | 36.5592 | 0.5231
 |  5    | sasame_s256 + esrgan_x2 + cxloss_w10 + dists_w12.5 | 8 | 0.9318 | 5.0687 | 32.8758 | 0.5489
+|  6    | sasame_s256 + esrgan_x2 + distsloss_w10 | 4 | 0.8906 | 5.1507 | 38.9355 | 0.5013
 
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
