@@ -46,6 +46,7 @@
 |  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  24   |  gauganv1_s256_vae+esrgan_x2+modeseek+stylecycle+dualattn   | 8 | 0.8766 | 5.0718 | 34.0008 | 0.5116
+***
 
 ### SASAME
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
