@@ -1,31 +1,51 @@
 # Scene
 ## 线上实验
 ### Gauganv1
+
+#### standard
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1    | gauganv1_s512+esrgan_x2  | 12 | 0.8808 | 4.9649 | 47.3168 | 0.4507
 |  2    | gauganv1_s256+esrgan_x2  | 8 | 0.8718 | 5.0146 | 52.2234 | 0.4268
 |  3    | gauganv1_s512  | 12 | **0.9063** | 4.9318 | 47.7813 | 0.4601
 |  4    | gauganv1_s256_vae+esrgan_x2  | 8 | 0.8714 | 5.0663 | 42.69 | 0.4704
+|  8    | gauganv1_s256_vae+bicubic_x2  | 8 | 0.8828 | 4.9664 | 51.2145| 0.4346
+|  10    | gauganv1_s512_vae  | 12 | 0.9007 | 5.0321 | 37.0918| 0.5099
+
+
+#### cycleGAN
+|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
+|  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  5    | gauganv1_s512+cycleGAN_ep180  | 6 | 0.8833 | 4.9263 | 41.567 | 0.4757
 |  6    | gauganv1_s512+cycleGAN_ep20  | 6 | 0.8877 | 4.8457 | 49.1204 | 0.4409
 |  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | 36.3846| 0.4894
-|  8    | gauganv1_s256_vae+bicubic_x2  | 8 | 0.8828 | 4.9664 | 51.2145| 0.4346
+
+#### cx loss
+|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
+|  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  9    | gauganv1_s256_vae+esrgan_x2+cxloss_w10.0  | 4 | 0.9059 | 4.9234 | 35.0399| 0.5172
-|  10    | gauganv1_s512_vae  | 12 | 0.9007 | 5.0321 | 37.0918| 0.5099
 |  11   |  gauganv1_s256_vae+esrgan_x2+cxloss_w5  | 4 | 0.9043 | 4.8984 | 35.5186 | 0.513
 |  12   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5  | 4 | 0.9043 | 5.0655 | **33.2812** | 0.5307
 |  13   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2  | 4 | **0.9128** | 5.0504 | **32.6841** | **0.5377**
-|  14   |  gauganv1_s256_vae_SA+esrgan_x2  | 4 | 0.8525 | 4.4462 | 55.2136 | 0.3804
-|  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
-|  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  17   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
+|  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
+
+#### losses
+|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
+|  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 16 | 0.899 | **5.1087** | **29.8064** | **0.5452**
 |  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 16 | 0.8866 | 5.0784 | 37.064 | 0.5041
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 16 | 0.8811 | 5.1018 | 42.0288 | 0.4802
-|  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
 |  23   |  gauganv1_s256_vae+esrgan_x2+sploss_w12.5   | 16 | 0.8744 | 5.1517 | 44.5676 | 0.4676
+
+#### tricks
+|  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
+|  ----    |  ----  | ----  |----  |----  |----  |----  |
+|  14   |  gauganv1_s256_vae_SA+esrgan_x2  | 4 | 0.8525 | 4.4462 | 55.2136 | 0.3804
+|  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
+|  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
+|  24   |  gauganv1_s256_vae+esrgan_x2+modeseek+stylecycle+dualattn   | 8 | 0.8766 | 5.0718 | 34.0008 | 0.5116
 
 ### SASAME
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
