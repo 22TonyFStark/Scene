@@ -46,8 +46,9 @@
 |  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  24   |  gauganv1_s256_vae+esrgan_x2+modeseek+stylecycle+dualattn   | 8 | 0.8766 | 5.0718 | 34.0008 | 0.5116
+  
 ***
-
+  
 ### SASAME
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
@@ -58,7 +59,9 @@
 |  5    | sasame_s256 + esrgan_x2 + cxloss_w10 + dists_w12.5 | 8 | **0.9318** | **5.0687** | **32.8758** | **0.5489**
 |  6    | sasame_s256 + esrgan_x2 + distsloss_w10 | 4 | 0.8906 | **5.1507** | 38.9355 | 0.5013
 |  6    | sasame_s256 + esrgan_x2 + distsloss_w10 + seg | 8 | **0.9317** | 5.0236 | **35.6999** | **0.5336**
-
+  
+***
+  
 ### CoCosNetv1
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
@@ -66,12 +69,16 @@
 |  2   |  cocosnetv1_s256_trainVGG_testIOU+esrgan_x2 (jpg) | 4 | 0.8738 | 4.6861 | 42.457 | 0.4561
 |  3   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (jpg) | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
 |  4   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (png) | 16 | 0.8852 | **5.247** | **31.7785** | **0.5342**
-
+  
+***
+  
 ### CoCosNetv2
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1   |  cocosnetv2_s512 | 8 | 0.9124 | 5.3079 | 29.9293 | 0.5618
-
+  
+***
+  
 ### UNITE
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
