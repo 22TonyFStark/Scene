@@ -84,7 +84,9 @@
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1   |  unite_s256_cxloss0.1+esrgan_x2 | 4 | 0.8822 | 5.2341 | 32.1044 | 0.5304
 |  2   |  unite_s256_cxloss0.1_bicubic+esrgan_x2+cycleGAN | 4 | 0.876 | 5.1704 | 33.6479 | 0.5171
-
+  
+***
+  
 
 ## 线下实验
 ### Gauganv1_s256_vae
@@ -108,6 +110,7 @@
 |  15    | + focalfreq loss w5 |  41.21
 |  16    | + focalfreq loss w7.5 |  35.79
 |  17    | + focalfreq loss w10 |  49.67
+|  18    | + modeseek + stylecycle + dual attn |  34.8
 
 ### cocosnetv2
 |  ID    |  描述    |   FID | 
