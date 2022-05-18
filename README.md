@@ -35,9 +35,10 @@
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  19   |  gauganv1_s256_vae+esrgan_x2+distsloss  | 16 | 0.899 | **5.1087** | **29.8064** | **0.5452**
-|  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss  | 16 | 0.8866 | 5.0784 | 37.064 | 0.5041
+|  20   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss_w12.5  | 16 | 0.8866 | 5.0784 | 37.064 | 0.5041
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 16 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 |  23   |  gauganv1_s256_vae+esrgan_x2+sploss_w12.5   | 16 | 0.8744 | 5.1517 | 44.5676 | 0.4676
+|  25   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss_w7.5  | 16 | 0.8911 | 5.0681 | 35.0263 | 0.5153
 
 #### tricks
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
@@ -46,6 +47,7 @@
 |  15   |  gauganv1_s256_vae_gradAccu+esrgan_x2  | 4 | 0.836 | 4.5946 | 58.3473 | 0.3662
 |  16   |  gauganv1_s512_vae_DperG2+esrgan_x2  | 4 | 0.8711 | 5.0448 | 35.7907 | 0.4994
 |  24   |  gauganv1_s256_vae+esrgan_x2+modeseek+stylecycle+dualattn   | 8 | 0.8766 | 5.0718 | 34.0008 | 0.5116
+|  26   |  gauganv1_s256_vae+esrgan_x2+DiffAug  | 8 | 0.8862 | 4.957 | 42.0479 | 0.4764
   
 ***
   
