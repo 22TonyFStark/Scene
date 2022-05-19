@@ -30,6 +30,8 @@
 |  17   |  gauganv1_s256_vae+esrgan_x2+cxloss_smoothL1  | 4 | 0.8969 | 4.849 | 35.6237 | 0.5062
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
 |  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
+|  27   |  gauganv1_s512_vae+cxloss_w10_L1(e35)w2.5_L2(e45)  | 4 | 0.864 | 5.1484 | 39.2625 | 0.4848
+|  28   |  gauganv1_s512_vae+cxloss_w2.5_L2(e50)  | 4 | 0.8758 | 5.1645 | 40.7387 | 0.4857
 
 #### losses
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
