@@ -71,7 +71,8 @@
 |  2   |  cocosnetv1_s256_trainVGG_testIOU+esrgan_x2 (jpg) | 4 | 0.8738 | 4.6861 | 42.457 | 0.4561
 |  3   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (jpg) | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
 |  4   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (png) | 16 | 0.8852 | **5.247** | **31.7785** | **0.5342**
-  
+|  5   |  cocosnetv1_s256_trainIOU_testIOU_ndf128+esrgan_x2 (png) | 16 | 0.8887 | **5.1397** | **31.5109** | **0.5327** 
+ 
 ***
   
 ### CoCosNetv2
