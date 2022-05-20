@@ -63,6 +63,7 @@
 |  5    | sasame_s256 + esrgan_x2 + cxloss_w10 + dists_w12.5 | 8 | **0.9318** | **5.0687** | **32.8758** | **0.5489**
 |  6    | sasame_s256 + esrgan_x2 + distsloss_w10 | 4 | 0.8906 | **5.1507** | 38.9355 | 0.5013
 |  6    | sasame_s256 + esrgan_x2 + distsloss_w10 + seg | 8 | **0.9317** | 5.0236 | **35.6999** | **0.5336**
+|  6    | sasame_s256 + esrgan_x2 + distsloss_w12.5 | 16 | 0.9015 | 5.046 | 43.6526 | 0.4814
   
 ***
   
@@ -74,6 +75,7 @@
 |  3   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (jpg) | 16 | 0.8776 | 4.7023 | 42.4705 | 0.4588
 |  4   |  cocosnetv1_s256_trainIOU_testIOU+esrgan_x2 (png) | 16 | 0.8852 | **5.247** | **31.7785** | **0.5342**
 |  5   |  cocosnetv1_s256_trainIOU_testIOU_ndf128+esrgan_x2 (png) | 16 | 0.8887 | **5.1397** | **31.5109** | **0.5327** 
+|  6   |  cocosnetv1_s256_trainIOU_testIOU_ndf64+segw1+esrgan_x2 (png) | 16 | 0.8799 | **5.1514** | **33.1764** | **0.5206** 
  
 ***
   
