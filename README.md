@@ -19,6 +19,8 @@
 |  5    | gauganv1_s512+cycleGAN_ep180  | 6 | 0.8833 | 4.9263 | 41.567 | 0.4757
 |  6    | gauganv1_s512+cycleGAN_ep20  | 6 | 0.8877 | 4.8457 | 49.1204 | 0.4409
 |  7    | gauganv1_s256_vae+esrgan_x2+cycleGAN_ep180  | 6 | 0.8714 | 4.8706 | 36.3846| 0.4894
+|  7    | cocosnetv1+cycleGAN_ep180  | 6 | 0.8789 | 5.1073 | 35.0023| 0.5101
+|  7    | cocosnetv2+cycleGAN_ep180  | 6 | 0.8954 | 5.292 | 31.8364| 0.5421
 
 #### cx loss
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
@@ -31,7 +33,8 @@
 |  18   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2+cycleGAN  | 4 | 0.8844 | 4.9047 | 36.4918 | 0.4977
 |  22   |  gauganv1_s256_vae+esrgan_x2+cxloss_w2.5_L2 (IOU)  | 4 | 0.8998 | 5.1044 | 33.2381 | 0.53
 |  27   |  gauganv1_s512_vae+cxloss_w10_L1(e35)w2.5_L2(e45)  | 4 | 0.864 | 5.1484 | 39.2625 | 0.4848
-|  28   |  gauganv1_s512_vae+cxloss_w2.5_L2(e50)  | 4 | 0.8758 | 5.1645 | 40.7387 | 0.4857
+|  28   |  gauganv1_s512_vae+cxloss_w2.5_L2(e50)  | 8 | 0.8758 | 5.1645 | 40.7387 | 0.4857
+|  25   |  gauganv1_s512+cxloss_w2.5  | 1 | 0.9005 | 5.1418 | 47.9501 | 0.4659
 
 #### losses
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
@@ -41,6 +44,8 @@
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 16 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 |  23   |  gauganv1_s256_vae+esrgan_x2+sploss_w12.5   | 16 | 0.8744 | 5.1517 | 44.5676 | 0.4676
 |  25   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss_w7.5  | 16 | 0.8911 | 5.0681 | 35.0263 | 0.5153
+
+
 
 #### tricks
 |  ID    |  描述    | bs | mask_acc  | 美学 | FID | 总分
