@@ -102,6 +102,9 @@
 |  ----    |  ----  | ----  |----  |----  |----  |----  |
 |  1   |  unite_s256_cxloss0.1+esrgan_x2 | 4 | 0.8822 | 5.2341 | 32.1044 | 0.5304
 |  2   |  unite_s256_cxloss0.1_bicubic+esrgan_x2+cycleGAN | 4 | 0.876 | 5.1704 | 33.6479 | 0.5171
+|  3   |  unite_s256_cxloss0.5_epoch200+cycleGAN | 4 | 0.903 | 5.1959 | 28.0596 | 0.5594
+|  4   |  unite_s256_cxloss1_dists_epoch250+cycleGAN | 4 | 0.8919 | 5.2321 | 27.9106 | 0.5548
+|  5   |  unite_s256_cxloss0.5+dists_w12.5+cycleGAN | 4 | 0.9084 | 5.2136 | 28.2823 | 0.5626
   
 ***
   
