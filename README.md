@@ -44,7 +44,7 @@
 |  21   |  gauganv1_s256_vae+esrgan_x2+haarloss  | 16 | 0.8811 | 5.1018 | 42.0288 | 0.4802
 |  23   |  gauganv1_s256_vae+esrgan_x2+sploss_w12.5   | 16 | 0.8744 | 5.1517 | 44.5676 | 0.4676
 |  25   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss_w7.5  | 16 | 0.8911 | 5.0681 | 35.0263 | 0.5153
-
+|  27   |  gauganv1_s256_vae+esrgan_x2+focalfreqloss_w7.5+dists_w12.5  | 16 | 0.8988 | 5.1371 | 32.7079 | 0.5333
 
 
 #### tricks
@@ -93,7 +93,10 @@
 |  3   |  cocosnetv2_s512_ep100+dists30 | 8 | 0.91 | 5.3069 | 29.8367 | 0.5607
 |  4   |  cocosnetv2_s512_ep100+maskaccIOU | 8 | 0.9026 | 5.3086 | 30.0753 | 0.5552
 |  5   |  cocosnetv2_s512_ep100+IOU | 8 | 0.9146 | 5.3013 | 31.3625 | 0.5563
-|  5   |  cocosnetv2_s512_ep66+IOU | 8 | 0.9171 | 5.2917 | 30.8449 | 0.5598
+|  6   |  cocosnetv2_s512_ep66+IOU | 8 | 0.9171 | 5.2917 | 30.8449 | 0.5598
+|  7   |  cocosnetv2_s512_ep40+dists_w12.5 | 8 | 0.9032 | 5.2593 | 32.5123 | 0.5423
+|  8   |  cocosnetv2_s512_ep50+dists_w12.5 | 8 | 0.9136 | 5.3127 | 30.9537 | 0.5581
+|  9   |  cocosnetv2_s512_ep60+dists_w12.5 | 8 | 0.9171 | 5.2917 | 30.8449 | 0.5598
   
 ***
   
