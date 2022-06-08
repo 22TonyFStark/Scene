@@ -75,7 +75,7 @@ class MultiscaleDiscriminator(BaseNetwork):
 
     # Returns list of lists of discriminator outputs.
     # The final result is of size opt.num_D x opt.n_layers_D
-    def forward(self, input):
+    def execute(self, input):
         result = []
         segs = []
         cam_logits = []
@@ -162,7 +162,7 @@ class NLayerDiscriminator(BaseNetwork):
             input_nc += 1
         return input_nc
 
-    def forward(self, input):
+    def execute(self, input):
         results = [input]
         seg = None
         cam_logit = None
