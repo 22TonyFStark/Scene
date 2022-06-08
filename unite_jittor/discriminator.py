@@ -32,6 +32,7 @@ def find_class_in_module(target_cls_name, module):
 class MultiscaleDiscriminator(BaseNetwork):
     @staticmethod
     def modify_commandline_options(parser, is_train):
+        # TODO: 这里和源码不一样，目前没搞清楚源码是什么时候调用这个函数，现在是直接在整体的configs里设置以下超参数
         parser.add_argument('--netD_subarch', type=str, default='n_layer',
                             help='architecture of each discriminator')
         parser.add_argument('--num_D', type=int, default=2,
