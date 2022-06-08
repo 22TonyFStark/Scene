@@ -118,6 +118,7 @@ class Ada_SPADEResnetBlock(jittor.Module):
 
         # define normalization layers
         spade_config_str = opt.norm_G.replace('spectral', '')
+
         if 'spade_ic' in opt:
             ic = opt.spade_ic
         else:
