@@ -126,4 +126,4 @@ class KLDLoss(nn.Module):
 
 if __name__ == '__main__':
     ganloss = GANLoss()
-    a = 
+    

@@ -144,7 +144,8 @@ class AdaptiveFeatureGenerator(BaseNetwork):
         self.layer4 = norm_layer(nn.Conv2d(ndf * 4, ndf * 8, opt.adaptor_kernel, stride=2, padding=pw))
         self.layer5 = norm_layer(nn.Conv2d(ndf * 8, ndf * 8, kw, stride=1, padding=pw))
 
-        self.actvn = nn.LeakyReLU(0.2, False)
+        # TODO: 不知道为什么没法用 x = self.layer2(nn.leaky_relu(x, 0.2)) TypeError: leaky_relu() takes from 1 to 2 positional arguments but 3 were given
+        #nn.leaky_relu = nn.LeakyReLU(0.2, False)
         self.opt = opt
         self.head_0 = Ada_SPADEResnetBlock(8 * nf, 8 * nf, opt, use_se=opt.adaptor_se)
 
@@ -167,14 +168,14 @@ class AdaptiveFeatureGenerator(BaseNetwork):
 
     def execute(self, input, seg, multi=False):
         x = self.layer1(input)
-        x = self.layer2(self.actvn(x))
+        x = self.layer2(nn.leaky_relu(x, 0.2))
         x2 = x
 
-        x = self.layer3(self.actvn(x))
+        x = self.layer3(nn.leaky_relu(x, 0.2))
         x3 = x
 
-        x = self.layer4(self.actvn(x))
-        x = self.layer5(self.actvn(x))
+        x = self.layer4(nn.leaky_relu(x, 0.2))
+        x = self.layer5(nn.leaky_relu(x, 0.2))
         x = self.head_0(x, seg)
         x4 = x
 

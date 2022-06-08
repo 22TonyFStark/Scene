@@ -104,7 +104,6 @@ class SEACE(jittor.Module):
 class SPADE(jittor.Module):
     def __init__(self, config_text, norm_nc, label_nc, PONO=False, use_apex=False):
         super().__init__()
-
         assert config_text.startswith('spade')
         parsed = re.search('spade(\D+)(\d)x\d', config_text)
         param_free_norm_type = str(parsed.group(1))
