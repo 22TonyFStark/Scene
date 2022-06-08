@@ -52,7 +52,7 @@ class SEACEGenerator(BaseNetwork):
         sh = round(sw / opt.aspect_ratio)
         return sw, sh
 
-    def forward(self, warp_out=None):
+    def execute(self, warp_out=None):
 
         seg_feat1, seg_feat2, seg_feat3, seg_feat4, seg_feat5, \
         ref_feat1, ref_feat2, ref_feat3, ref_feat4, ref_feat5, conf_map = warp_out
@@ -102,7 +102,7 @@ class Self_Attn(nn.Module):
         # self.gamma = nn.Parameter(torch.tensor(0.), requires_grad=True)
         self.softmax = nn.Softmax(dim=-1)
 
-    def forward(self, x, size):
+    def execute(self, x, size):
         x = nn.interpolate(x, size=(size, size), mode='nearest')
         m_batchsize, C, width, height = x.size()
         proj_query = self.query_conv(x).view(m_batchsize, -1, width * height).permute(0, 2, 1)  # B X CX(N)
@@ -165,7 +165,7 @@ class AdaptiveFeatureGenerator(BaseNetwork):
             #     self.deeper1 = Ada_SPADEResnetBlock(4 * nf, 4 * nf, opt)
             #     self.deeper2 = Ada_SPADEResnetBlock(4 * nf, 4 * nf, opt)
 
-    def forward(self, input, seg, multi=False):
+    def execute(self, input, seg, multi=False):
         x = self.layer1(input)
         x = self.layer2(self.actvn(x))
         x2 = x
@@ -222,7 +222,7 @@ class DomainClassifier(BaseNetwork):
                       nn.LogSoftmax(dim=1)]
         self.classifier = nn.Sequential(*model)
 
-    def forward(self, x):
+    def execute(self, x):
         x = self.feature(x)
         x = self.classifier(x.view(x.shape[0], -1))
         return x
