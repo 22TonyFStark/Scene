@@ -2,14 +2,12 @@ import sys
 import jittor
 import jittor.nn as nn
 from jittor import Function
-from base_network import BaseNetwork
-from generator import AdaptiveFeatureGenerator, DomainClassifier, ReverseLayerF
-from util import vgg_preprocess
-import util as util
-from geomloss import SamplesLoss
-from PIL import Image
-import utils.spectral_norm as spectral_norm
-from nceloss import BidirectionalNCE1
+from models.networks.base_network import BaseNetwork
+from models.networks.generator import AdaptiveFeatureGenerator, DomainClassifier
+from util.util import vgg_preprocess
+import util.util as util
+from .geomloss import SamplesLoss
+from .nceloss import BidirectionalNCE1
 
 class ResidualBlock(nn.Module):
 

@@ -6,12 +6,12 @@ import numpy as np
 import jittor.nn as nn
 import jittor
 from jittor import Function
-from base_network import BaseNetwork
-from normalization import get_nonspade_norm_layer, equal_lr
-from architecture import ResnetBlock as ResnetBlock
-from architecture import SEACEResnetBlock as SEACEResnetBlock
-from architecture import Ada_SPADEResnetBlock as Ada_SPADEResnetBlock
-from architecture import Attention
+from models.networks.base_network import BaseNetwork
+from models.networks.normalization import get_nonspade_norm_layer
+from models.networks.architecture import ResnetBlock as ResnetBlock
+from models.networks.architecture import SEACEResnetBlock as SEACEResnetBlock
+from models.networks.architecture import Ada_SPADEResnetBlock as Ada_SPADEResnetBlock
+from models.networks.architecture import Attention
 
 class SEACEGenerator(BaseNetwork):
     @staticmethod

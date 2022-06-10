@@ -4,29 +4,11 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 """
 import jittor
 import jittor.nn as nn
-import numpy as np
-from base_network import BaseNetwork
-from normalization import get_nonspade_norm_layer, equal_lr
-from architecture import Attention
-#import util.util as util
-import importlib
+from models.networks.base_network import BaseNetwork
+from models.networks.normalization import get_nonspade_norm_layer, equal_lr
+from models.networks.architecture import Attention
 
-def find_class_in_module(target_cls_name, module):
-    target_cls_name = target_cls_name.replace('_', '').lower()
-    print(module)
-    raise "s"
-    clslib = importlib.import_module(module)
-    cls = None
-    for name, clsobj in clslib.__dict__.items():
-        print(name)
-        if name.lower() == target_cls_name:
-            cls = clsobj
 
-    if cls is None:
-        print("In %s, there should be a class whose name matches %s in lowercase without underscore(_)" % (module, target_cls_name))
-        exit(0)
-
-    return cls
 
 
 class MultiscaleDiscriminator(BaseNetwork):

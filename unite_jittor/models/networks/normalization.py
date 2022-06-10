@@ -4,7 +4,7 @@ import numpy as np
 import jittor
 import jittor.nn as nn
 # jittor.nn == torch.nn.functional as F
-from utils.spectral_norm import spectral_norm as spectral_norm
+from models.networks.utils.spectral_norm import spectral_norm as spectral_norm
 import numpy as np
 from math import sqrt
 
@@ -58,7 +58,7 @@ class SEACE(jittor.Module):
             nn.Conv2d(feat_nc, nhidden, kernel_size=ks, padding=pw), nn.ReLU())
         # self.ref_gamma = nn.Conv2d(nhidden, norm_nc, kernel_size=ks, padding=pw)
         # self.ref_beta = nn.Conv2d(nhidden, norm_nc, kernel_size=ks, padding=pw)
-        self.coef = nn.Parameter(jittor.array(0.), requires_grad=True)
+        self.coef = jittor.array(0.)
 
     def execute(self, x, seg_map, ref_map, atten_map, conf_map):
         normalized = self.param_free_norm(x)

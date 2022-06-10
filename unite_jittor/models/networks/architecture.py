@@ -4,11 +4,11 @@ import jittor.nn as nn
 from jittor import init
 # jittor.nn == torch.nn.functional as F
 # torchvision.models.vgg19 == jittor.models.vgg19
-from utils.spectral_norm import spectral_norm as spectral_norm
-from normalization import SPADE, equal_lr, SEACE
+from models.networks.utils.spectral_norm import spectral_norm as spectral_norm
+from models.networks.normalization import SPADE, equal_lr, SEACE
 import os
 # print(os.getcwd())
-
+from jittor import models
 
 # ResNet block that uses SPADE.
 # It differs from the ResNet block of pix2pixHD in that
@@ -177,7 +177,7 @@ class Attention(jittor.Module):
             self.g = spectral_norm(self.g)
             self.o = spectral_norm(self.o)
         # Learnable gain parameter
-        self.gamma = nn.Parameter(jittor.Var(0.), requires_grad=True)
+        self.gamma = jittor.Var(0.)
 
     def execute(self, x, y=None):
         # Apply convs
@@ -220,7 +220,7 @@ class ResnetBlock(jittor.Module):
 class VGG19(jittor.Module):
     def __init__(self, requires_grad=False):
         super().__init__()
-        vgg_pretrained_features = jittor.models.vgg19(pretrained=True).features
+        vgg_pretrained_features = models.vgg19(pretrained=True).features
         self.slice1 = jittor.nn.Sequential()
         self.slice2 = jittor.nn.Sequential()
         self.slice3 = jittor.nn.Sequential()
